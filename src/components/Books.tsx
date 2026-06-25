@@ -59,7 +59,7 @@ export default function Books() {
       <div className="max-w-6xl mx-auto px-6">
         <FadeInSection>
           <h2 className="font-headline text-3xl md:text-4xl text-deep-ocean text-center mb-16">
-            공저책 보석함
+            책 보석함
           </h2>
         </FadeInSection>
 
