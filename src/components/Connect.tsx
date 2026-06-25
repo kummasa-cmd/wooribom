@@ -29,6 +29,7 @@ const channels = [
   },
   {
     name: "Brunch",
+    description: "우리봄과 바다 이야기",
     icon: PenLine,
     href: "https://brunch.co.kr/brunchbook/sea-came-to-me",
   },
@@ -81,6 +82,11 @@ export default function Connect() {
                 <span className="font-body text-sm text-deep-ocean">
                   {ch.name}
                 </span>
+                {"description" in ch && ch.description && (
+                  <span className="font-body text-xs text-misty-gray text-center leading-tight">
+                    {ch.description}
+                  </span>
+                )}
               </a>
             </FadeInSection>
           ))}
