@@ -62,6 +62,9 @@ export default function AudioPlayer() {
     }
   };
 
+  // temporarily hidden — re-enable by removing this line
+  return null;
+
   if (!ready) return null;
 
   return (
