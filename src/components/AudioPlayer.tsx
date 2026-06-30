@@ -26,20 +26,26 @@ export default function AudioPlayer() {
         audio.play().catch(() => {});
       }
     };
-
     audio.addEventListener("ended", handleEnded);
     setReady(true);
 
-    // 첫 방문 시 자동 재생 시도
-    const tryAutoPlay = () => {
-      audio.play().then(() => setPlaying(true)).catch(() => {
-        // 브라우저 정책으로 자동 재생 차단된 경우 무시
-      });
+    // 첫 번째 사용자 인터랙션 시 재생
+    const startOnInteraction = () => {
+      audio.play().then(() => setPlaying(true)).catch(() => {});
+      window.removeEventListener("click", startOnInteraction);
+      window.removeEventListener("scroll", startOnInteraction);
+      window.removeEventListener("touchstart", startOnInteraction);
     };
-    tryAutoPlay();
+
+    window.addEventListener("click", startOnInteraction);
+    window.addEventListener("scroll", startOnInteraction);
+    window.addEventListener("touchstart", startOnInteraction);
 
     return () => {
       audio.removeEventListener("ended", handleEnded);
+      window.removeEventListener("click", startOnInteraction);
+      window.removeEventListener("scroll", startOnInteraction);
+      window.removeEventListener("touchstart", startOnInteraction);
       audio.pause();
     };
   }, []);
