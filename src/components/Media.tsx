@@ -4,14 +4,14 @@ import FadeInSection from "./FadeInSection";
 
 const videos = [
   {
+    id: "UpxF60JxwOE",
+    title: "책의 시작은 바다였다",
+    caption: "책의 시작은 바다였다",
+  },
+  {
     id: "XjV5x5grrD4",
     title: "행복은 이렇게 와 - 도서 소개 영상",
     caption: "「행복은 이렇게 와」 도서 소개 영상",
-  },
-  {
-    id: "UpxF60JxwOE",
-    title: "우리봄 작가의 첫 종이책 집필 이야기",
-    caption: "우리봄 작가의 첫 종이책 - 집필 중",
   },
 ];
 

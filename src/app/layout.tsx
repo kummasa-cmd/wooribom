@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Gowun_Batang, Gaegu } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
-import AudioPlayer from "@/components/AudioPlayer";
 
 const gowunBatang = Gowun_Batang({
   subsets: ["latin"],
@@ -45,10 +44,7 @@ export default function RootLayout({
       lang="ko"
       className={`${gowunBatang.variable} ${gaegu.variable} ${pretendard.variable}`}
     >
-      <body className="font-body antialiased">
-        {children}
-        <AudioPlayer />
-      </body>
+      <body className="font-body antialiased">{children}</body>
     </html>
   );
 }

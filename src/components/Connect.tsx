@@ -1,14 +1,6 @@
 "use client";
 
-import {
-  AtSign,
-  BookOpen,
-  PenLine,
-  Link as LinkIcon,
-  Video,
-  Camera,
-  MessageCircle,
-} from "lucide-react";
+import { AtSign, BookOpen, PenLine, Camera } from "lucide-react";
 import FadeInSection from "./FadeInSection";
 
 const channels = [
@@ -23,30 +15,15 @@ const channels = [
     href: "https://www.threads.com/@wooribom.log",
   },
   {
-    name: "YouTube",
-    icon: Video,
-    href: "https://youtube.com/@wooribom?si=Y-zHdx0VRpp1gBvq",
+    name: "Naver Blog",
+    icon: BookOpen,
+    href: "http://blog.naver.com/smile3901",
   },
   {
     name: "Brunch",
     description: "우리봄과 바다 이야기",
     icon: PenLine,
     href: "https://brunch.co.kr/brunchbook/sea-came-to-me",
-  },
-  {
-    name: "Naver Blog",
-    icon: BookOpen,
-    href: "http://blog.naver.com/smile3901",
-  },
-  {
-    name: "X (Twitter)",
-    icon: MessageCircle,
-    href: "https://x.com/springrains4650",
-  },
-  {
-    name: "Linktree",
-    icon: LinkIcon,
-    href: "https://linktr.ee/Wooribombi",
   },
 ];
 
@@ -62,7 +39,7 @@ export default function Connect() {
             우리봄과 더 가까이
           </h2>
           <p className="font-body text-misty-gray text-center mb-14">
-            보석함의 문은 언제나 열려 있어요.
+            우리봄을 만날 수 있는 네 개의 작은 창입니다.
           </p>
         </FadeInSection>
 

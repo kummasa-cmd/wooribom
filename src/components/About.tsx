@@ -15,21 +15,21 @@ export default function About() {
               </div>
             </div>
             <div className="text-center md:text-left">
-              <h2 className="font-accent text-3xl md:text-4xl text-ocean-teal mb-2">
-                우리봄
-              </h2>
               <p className="font-headline text-xl text-deep-ocean mb-1">
                 김윤희
               </p>
+              <h2 className="font-accent text-2xl md:text-3xl text-ocean-teal mb-6">
+                (우리봄 Wooribom)
+              </h2>
               <p className="font-body text-misty-gray mb-6">
-                초등학교 교사 · 작가
+                교사 · 작가 · 다이버
               </p>
               <blockquote className="font-body text-deep-ocean leading-relaxed text-lg border-l-4 border-aqua-mist pl-5">
-                교실에서 아이들과 함께 마음을 키우고, 그 빛나는 순간을 글로
-                옮깁니다.
+                교실에서는 아이들의 마음이 자라는 순간을 함께합니다.
                 <br />
-                우리봄의 보석함에는 아이들의 동시, 일상의 에세이, 그리고 바다
-                같은 마음이 담겨 있어요.
+                글 안에서는 일상 속 스쳐 가는 찰나를 여행처럼 기록합니다.
+                <br />
+                바다에서는 조용히 숨을 고르며 생명의 아름다움을 배웁니다.
               </blockquote>
             </div>
           </div>

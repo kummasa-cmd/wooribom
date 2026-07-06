@@ -70,7 +70,11 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, delay: 0.5, ease: "easeOut" }}
         >
-          마음에 물결이 닿는 곳, 작은 보석들을 꺼내어 보세요.
+          마음에 물결이 닿는 곳,
+          <br />
+          당신만의 작은
+          <br />
+          보석을 꺼내어 보세요
         </motion.p>
       </div>
 
