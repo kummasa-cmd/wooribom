@@ -1,6 +1,7 @@
 "use client";
 
 import FadeInSection from "./FadeInSection";
+import { useLanguage } from "@/lib/language-context";
 
 const videos = [
   {
@@ -15,20 +16,27 @@ const videos = [
   },
 ];
 
+const subtitle = {
+  ko: "우리봄의 이야기를 영상으로 만나보세요.",
+  en: "Meet Wooribom's story in film.",
+};
+
 export default function Media() {
+  const { lang } = useLanguage();
+
   return (
-    <section id="media" className="py-24 md:py-32 bg-cloud-gray/40">
-      <div className="max-w-5xl mx-auto px-6">
+    <section id="media" className="py-24 md:py-32 bg-mist/40">
+      <div className="max-w-6xl mx-auto px-6">
         <FadeInSection>
-          <h2 className="font-headline text-3xl md:text-4xl text-deep-ocean text-center mb-4">
-            영상으로 만나는 보석함
+          <h2 className="font-headline text-3xl md:text-4xl text-ink text-center mb-4">
+            Films
           </h2>
-          <p className="font-body text-misty-gray text-center mb-12">
-            우리봄의 이야기를 영상으로 만나보세요.
+          <p className="font-body text-ink-soft text-center mb-12">
+            {subtitle[lang]}
           </p>
         </FadeInSection>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-10">
           {videos.map((video, i) => (
             <FadeInSection key={video.id} delay={i * 0.2}>
               <div>
@@ -42,7 +50,7 @@ export default function Media() {
                     loading="lazy"
                   />
                 </div>
-                <p className="font-body text-sm text-misty-gray text-center mt-4">
+                <p className="font-body text-sm text-ink-soft text-center mt-4">
                   {video.caption}
                 </p>
               </div>

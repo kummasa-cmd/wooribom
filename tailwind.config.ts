@@ -9,14 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "aqua-mist": "var(--aqua-mist)",
-        "ocean-teal": "var(--ocean-teal)",
-        "sky-cloud-blue": "var(--sky-cloud-blue)",
-        "soft-sand": "var(--soft-sand)",
-        "foam-white": "var(--foam-white)",
-        "cloud-gray": "var(--cloud-gray)",
-        "deep-ocean": "var(--deep-ocean)",
-        "misty-gray": "var(--misty-gray)",
+        paper: "rgb(var(--paper) / <alpha-value>)",
+        mist: "rgb(var(--mist) / <alpha-value>)",
+        ink: "rgb(var(--ink) / <alpha-value>)",
+        "ink-soft": "rgb(var(--ink-soft) / <alpha-value>)",
+        accent: "rgb(var(--accent) / <alpha-value>)",
+        line: "rgb(var(--line) / <alpha-value>)",
       },
       borderRadius: {
         card: "var(--radius-card)",
@@ -27,7 +25,6 @@ const config: Config = {
       fontFamily: {
         headline: ["var(--font-gowun-batang)", "serif"],
         body: ["var(--font-pretendard)", "sans-serif"],
-        accent: ["var(--font-gaegu)", "cursive"],
       },
     },
   },

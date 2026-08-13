@@ -3,19 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --aqua-mist: #A8DCE3;
-  --ocean-teal: #3DB2C7;
-  --sky-cloud-blue: #7EC0E8;
-  --soft-sand: #F4E6D2;
-  --foam-white: #FAFCFD;
-  --cloud-gray: #E8EEF2;
-  --deep-ocean: #1F4D5C;
-  --misty-gray: #6B8A93;
+  /* RGB channel triplets (not hex) so Tailwind can apply opacity modifiers, e.g. bg-mist/40 */
+  --paper: 250 250 248;    /* #FAFAF8 */
+  --mist: 232 239 243;     /* #E8EFF3 */
+  --ink: 22 40 58;         /* #16283A */
+  --ink-soft: 86 105 122;  /* #56697A */
+  --accent: 44 107 130;    /* #2C6B82 */
+  --line: 226 231 234;     /* #E2E7EA */
 
-  --gradient-ocean: linear-gradient(180deg, #7EC0E8 0%, #A8DCE3 40%, #F4E6D2 100%);
-
-  --shadow-card: 0 8px 32px rgba(61, 178, 199, 0.12);
-  --radius-card: 24px;
+  --shadow-card: 0 8px 32px rgba(22, 40, 58, 0.10);
+  --radius-card: 20px;
 }
 
 html {
@@ -23,11 +20,11 @@ html {
 }
 
 body {
-  color: var(--deep-ocean);
-  background: var(--foam-white);
+  color: rgb(var(--ink));
+  background: rgb(var(--paper));
 }
 
-/* Hero ripple animation */
+/* Hero ripple */
 .ripple {
   position: absolute;
   bottom: 0;
@@ -36,24 +33,18 @@ body {
   aspect-ratio: 6 / 1;
   translate: -50% 50%;
   border-radius: 45%;
-  opacity: 0.08;
+  opacity: 0.06;
 }
 
 .ripple-1 {
-  background: var(--aqua-mist);
-  animation: ripple-spin 10s linear infinite;
+  background: rgb(var(--mist));
+  animation: ripple-spin 12s linear infinite;
 }
 
 .ripple-2 {
-  background: var(--sky-cloud-blue);
-  animation: ripple-spin 12s linear infinite reverse;
+  background: rgb(var(--accent));
+  animation: ripple-spin 16s linear infinite reverse;
   opacity: 0.05;
-}
-
-.ripple-3 {
-  background: var(--ocean-teal);
-  animation: ripple-spin 8s linear infinite;
-  opacity: 0.04;
 }
 
 @keyframes ripple-spin {
@@ -63,16 +54,6 @@ body {
   to {
     rotate: 360deg;
   }
-}
-
-@keyframes wiggle {
-  0%, 100% { rotate: 0deg; }
-  25% { rotate: -6deg; }
-  75% { rotate: 6deg; }
-}
-
-.animate-wiggle {
-  animation: wiggle 0.4s ease-in-out;
 }
 
 @media (prefers-reduced-motion: reduce) {
