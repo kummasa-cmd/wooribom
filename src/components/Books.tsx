@@ -97,7 +97,7 @@ const bookGroups: { heading: Text; books: Book[] }[] = [
           },
           {
             label: { ko: "교보문고에서 보기", en: "View on Kyobo Book" },
-            href: "https://product.kyobobook.co.kr/detail/S000220619023",
+            href: "https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013253099",
           },
         ],
       },
