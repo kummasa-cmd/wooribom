@@ -75,7 +75,7 @@ const bookGroups: { heading: Text; books: Book[] }[] = [
           },
           {
             label: { ko: "교보문고에서 보기", en: "View on Kyobo Book" },
-            href: "http://product.kyobobook.co.kr/detail/S000220619023",
+            href: "https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000012258589",
           },
         ],
       },
@@ -92,8 +92,12 @@ const bookGroups: { heading: Text; books: Book[] }[] = [
         coverSrc: "/images/book-heart-growing2.jpg",
         links: [
           {
-            label: { ko: "출간 소식 받기", en: "Get publication updates" },
-            href: "https://linktr.ee/Wooribombi",
+            label: { ko: "예스24에서 보기", en: "View on Yes24" },
+            href: "https://www.yes24.com/product/goods/193866520",
+          },
+          {
+            label: { ko: "교보문고에서 보기", en: "View on Kyobo Book" },
+            href: "https://product.kyobobook.co.kr/detail/S000220619023",
           },
         ],
       },

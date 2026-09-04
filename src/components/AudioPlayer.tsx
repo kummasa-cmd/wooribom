@@ -6,16 +6,8 @@ import { useLanguage } from "@/lib/language-context";
 
 const MUSIC_TRACKS = [
   {
-    title: { ko: "INTO THE BLUE", en: "INTO THE BLUE" },
-    src: "/music/1. INTO THE BLUE.mp3",
-  },
-  {
-    title: { ko: "바다에 와 있는 기분", en: "Feels Like Being at the Sea" },
-    src: "/music/2. 바다에 와 있는 기분.mp3",
-  },
-  {
-    title: { ko: "파도가 닿는 곳에", en: "Where the Waves Reach" },
-    src: "/music/3. 파도가 닿는 곳에.mp3",
+    title: { ko: "Wooribom Ocean", en: "Wooribom Ocean" },
+    src: "/music/Wooribom Ocean.mp3",
   },
 ];
 
